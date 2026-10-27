@@ -1,0 +1,8 @@
+node_modules/
+dist/
+vendor/
+build/
+*.egg-info/
+__pycache__/
+.pytest_cache/
+composer.lock

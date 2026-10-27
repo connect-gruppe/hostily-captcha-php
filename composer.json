@@ -1,0 +1,52 @@
+{
+    "name": "hostily/captcha",
+    "description": "Server-side client for hostily Captcha (captcha.hostily.de): verify the token of a submitted form.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "captcha",
+        "spam",
+        "hostily",
+        "recaptcha-alternative",
+        "proof-of-work"
+    ],
+    "homepage": "https://captcha.hostily.de",
+    "authors": [
+        {
+            "name": "connect - Media & Teledienst",
+            "homepage": "https://captcha.hostily.de"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/connect-gruppe/hostily-captcha-php",
+        "issues": "https://github.com/connect-gruppe/hostily-captcha-php/issues",
+        "docs": "https://captcha.hostily.de"
+    },
+    "require": {
+        "php": ">=7.4",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "suggest": {
+        "psr/http-client": "Use any PSR-18 HTTP client instead of ext-curl (Psr18Transport)"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hostily\\Captcha\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hostily\\Captcha\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
